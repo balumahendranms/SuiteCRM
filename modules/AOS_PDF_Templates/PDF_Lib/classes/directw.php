@@ -4,7 +4,7 @@ class directw
 {
     public $mpdf = null;
 
-    public function directw(&$mpdf)
+    public function __construct(&$mpdf)
     {
         $this->mpdf = $mpdf;
     }
@@ -451,7 +451,7 @@ class directw
 
         $mid = ($r1 + $r2) / 2;
         $loop   = 0;
-    
+
         while ($loop == 0) {
             $this->mpdf->SetFont($font, $fontstyle, $szfont);
             $sz = $this->mpdf->GetStringWidth($text);

@@ -860,10 +860,6 @@ $mod_strings = array(
     'LBL_AOP_ADD_STATUS' => 'Add',
     'LBL_AOP_REMOVE_STATUS' => 'Remove',
 
-    'LBL_AOD_ADMIN_MANAGE_AOD' => 'Advanced OpenDiscovery Settings',
-    'LBL_AOD_ENABLE' => 'Enable AOD',
-    'LBL_AOD_SETTINGS' => 'AOD Settings',
-
     'LBL_AOS_ADMIN_CONTRACT_SETTINGS' => 'Contract Settings',
     'LBL_AOS_ADMIN_CONTRACT_RENEWAL_REMINDER' => 'Renewal Reminder period',
     'LBL_AOS_ADMIN_MANAGE_AOS' => 'Advanced OpenSales Settings',
@@ -961,17 +957,29 @@ $mod_strings = array(
     'LBL_SEARCH_ENGINE' => 'Search Engine',
     'LBL_SEARCH_ENGINE_HELP' => 'Configure the default search engine used by the search.',
     'LBL_SEARCH_ENGINE_TOOLTIP' => 'Select a search engine for the Global Search.',
+    'LBL_SEARCH_GENERAL' => 'General',
 
     'LBL_SEARCH_MODULES' => 'Search Modules',
     'LBL_SEARCH_MODULES_HELP' => 'Select the module(s) that users will be able to search against using the Global Search.',
 
     // Search Engines Translations
-    'LBL_LEGACY_SEARCH_ENGINES' => 'Legacy Search',
-    'LBL_SEARCH_WRAPPER_ENGINES' => 'Search Engines (new)',
+    'LBL_SEARCH_WRAPPER_ENGINES' => 'Search Engines',
     'LBL_BASIC_SEARCH_ENGINE' => 'Basic Search',
     'LBL_BASIC_AND_AOD_ENGINE' => 'Basic + Advanced Search',
     'LBL_ELASTIC_SEARCH_ENGINE' => 'Elasticsearch Engine',
     'LBL_SIMPLE_SQL_SEARCH_ENGINE' => 'Simple SQL Search Engine',
+
+    // SearchWrapper Settings
+    'LBL_PDF_HEADER' => 'PDF Settings',
+    'LBL_CHANGE_PDF_SETTINGS' => 'Change PDF Settings',
+    'LBL_PDF_HEADER_DESC' => 'Manage your PDF preferences',
+    'LBL_PDF_OPTIONS' => 'PDF Engine',
+    'LBL_PDF_OPTIONS_HELP' => 'Select the PDF engine that users will be able to use.',
+    'LBL_PDF_INTERFACE' => 'PDF Interface',
+
+    // PDF Engines Translations
+    'LBL_PDF_WRAPPER_ENGINES' => 'PDF Engines',
+    'LBL_MPDF_ENGINE' => 'MPDF Engine',
 
     // Ajax Submit
     'LBL_AJAX_SUBMIT_FAIL' => 'An error has occurred while saving the settings.',

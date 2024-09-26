@@ -1,9 +1,10 @@
 <?php
 
-class indic
-{
-    public function indic()
+class indic {
+
+    public function __construct()
     {
+
     }
 
 

@@ -303,7 +303,7 @@ class MBPackage
     public function build($export = true, $clean = false)
     {
         $this->loadModules();
-        require_once 'include/utils/zip_utils.php';
+        require_once 'include/utils/php_zip_utils.php';
         $path = $this->getBuildDir() . '/SugarModules';
         if ($clean && file_exists($path)) {
             rmdir_recursive($path);
@@ -686,7 +686,7 @@ class MBPackage
                 copy('LICENSE.txt', $path . '/LICENSE.txt');
             }
         }
-        require_once 'include/utils/zip_utils.php';
+        require_once 'include/utils/php_zip_utils.php';
         $date = date('Y_m_d_His');
         $zipDir = $this->getZipDir();
         if (!file_exists($zipDir)) {
@@ -1049,7 +1049,7 @@ class MBPackage
                 sugar_file_put_contents($tmppath . '/README.txt', $readme_contents);
             }
         }
-        require_once 'include/utils/zip_utils.php';
+        require_once 'include/utils/php_zip_utils.php';
         $date = date('Y_m_d_His');
         $zipDir = 'custom/modulebuilder/packages/ExportProjectZips';
         if (!file_exists($zipDir)) {

@@ -4,7 +4,7 @@ class grad
 {
     public $mpdf = null;
 
-    public function grad(&$mpdf)
+    public function __construct(&$mpdf)
     {
         $this->mpdf = $mpdf;
     }

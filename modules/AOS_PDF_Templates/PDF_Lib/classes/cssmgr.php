@@ -12,12 +12,12 @@ class cssmgr
     public $listCSSlvl;
 
 
-    public function cssmgr(&$mpdf)
+    public function __construct(&$mpdf)
     {
         $this->mpdf = $mpdf;
         $this->tablecascadeCSS = array();
         $this->listcascadeCSS = array();
-        $this->CSS=array();
+        $this->CSS = array();
         $this->cascadeCSS = array();
         $this->tbCSSlvl = 0;
         $this->listCSSlvl = 0;
@@ -362,7 +362,7 @@ class cssmgr
                                 }
                             }
                         }
-           
+
                         if ($tag) {
                             $x = &$this->cascadeCSS;
                             foreach ($tmp as $tp) {

@@ -29,12 +29,12 @@ class tocontents
     public $TOC_page_selector;
     public $m_TOC;
 
-    public function tocontents(&$mpdf)
+    public function __construct(&$mpdf)
     {
         $this->mpdf = $mpdf;
-        $this->_toc=array();
+        $this->_toc = array();
         $this->TOCmark = 0;
-        $this->m_TOC=array();
+        $this->m_TOC = array();
     }
 
     public function TOCpagebreak($tocfont='', $tocfontsize='', $tocindent='', $TOCusePaging=true, $TOCuseLinking='', $toc_orientation='', $toc_mgl='', $toc_mgr='', $toc_mgt='', $toc_mgb='', $toc_mgh='', $toc_mgf='', $toc_ohname='', $toc_ehname='', $toc_ofname='', $toc_efname='', $toc_ohvalue=0, $toc_ehvalue=0, $toc_ofvalue=0, $toc_efvalue=0, $toc_preHTML='', $toc_postHTML='', $toc_bookmarkText='', $resetpagenum='', $pagenumstyle='', $suppress='', $orientation='', $mgl='', $mgr='', $mgt='', $mgb='', $mgh='', $mgf='', $ohname='', $ehname='', $ofname='', $efname='', $ohvalue=0, $ehvalue=0, $ofvalue=0, $efvalue=0, $toc_id=0, $pagesel='', $toc_pagesel='', $sheetsize='', $toc_sheetsize='', $tocoutdent='')
@@ -551,7 +551,7 @@ public function TOC($tocfont='', $tocfontsize=0, $tocindent=0, $resetpagenum='',
             if (isset($attr['TOC-POSTHTML']) && $attr['TOC-POSTHTML']) {
                 $this->m_TOC[$toc_id]['TOCpostHTML'] = htmlspecialchars_decode($attr['TOC-POSTHTML'], ENT_QUOTES);
             }
-      
+
             if (isset($attr['TOC-BOOKMARKTEXT']) && $attr['TOC-BOOKMARKTEXT']) {
                 $this->m_TOC[$toc_id]['TOCbookmarkText'] = htmlspecialchars_decode($attr['TOC-BOOKMARKTEXT'], ENT_QUOTES);
             }	// *BOOKMARKS*

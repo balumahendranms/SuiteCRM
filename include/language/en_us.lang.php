@@ -458,6 +458,7 @@ $app_list_strings = array(
         'Accounts' => 'Account',
         'Contacts' => 'Contact',
         'Opportunities' => 'Opportunity',
+        'Campaigns' => 'Campaign',
         'Tasks' => 'Task',
         'Emails' => 'Email',
 
@@ -491,11 +492,11 @@ $app_list_strings = array(
         'ProjectTask' => 'Project Task',
 
         'Prospects' => 'Target',
-        
+
         'AOS_Contracts' => 'Contract',
         'AOS_Invoices' => 'Invoice',
         'AOS_Quotes' => 'Quote',
-        'AOS_Products' => 'Product',        
+        'AOS_Products' => 'Product',
 
     ),
     'parent_line_items' => array(
@@ -2127,6 +2128,7 @@ $app_strings = array(
     'LBL_SUBTHEME_OPTIONS_DAY' => 'Day',
     'LBL_SUBTHEME_OPTIONS_DUSK' => 'Dusk',
     'LBL_SUBTHEME_OPTIONS_NIGHT' => 'Night',
+    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
 
     'LBL_CONFIRM_DISREGARD_DRAFT_TITLE' => 'Disregard draft',
     'LBL_CONFIRM_DISREGARD_DRAFT_BODY' => 'This operation will delete this email, do you want to continue?',
@@ -3714,3 +3716,5 @@ $app_strings['LBL_SEARCH_PREV'] = 'Previous';
 $app_strings['LBL_SEARCH_NEXT'] = 'Next';
 $app_strings['LBL_SEARCH_PAGE'] = 'Page ';
 $app_strings['LBL_SEARCH_OF'] = ' of ';
+$app_strings['LBL_USE_ADVANCED_SEARCH'] = 'Use Advanced Search';
+$app_strings['LBL_USE_BASIC_SEARCH'] = 'Use Basic Search';

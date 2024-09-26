@@ -71,8 +71,6 @@ $admin_option_defs['Administration']['languages']= array('Currencies','LBL_MANAG
 
 $admin_option_defs['Administration']['repair']= array('Repair','LBL_UPGRADE_TITLE','LBL_UPGRADE','./index.php?module=Administration&action=Upgrade', 'repair');
 
-$admin_option_defs['Administration']['global_search']=array('icon_SearchForm','LBL_GLOBAL_SEARCH_SETTINGS','LBL_GLOBAL_SEARCH_SETTINGS_DESC','./index.php?module=Administration&action=GlobalSearchSettings', 'global-search');
-
 if (!isset($GLOBALS['sugar_config']['hide_admin_diagnostics']) || !$GLOBALS['sugar_config']['hide_admin_diagnostics']) {
     $admin_option_defs['Administration']['diagnostic']= array('Diagnostic','LBL_DIAGNOSTIC_TITLE','LBL_DIAGNOSTIC_DESC','./index.php?module=Administration&action=Diagnostic', 'diagnostic');
 }
@@ -109,6 +107,14 @@ $admin_option_defs['Administration']['oauth2_clients'] = array(
     'LBL_OAUTH2_CLIENTS',
     './index.php?module=OAuth2Clients&action=index',
     'password'
+);
+
+$admin_option_defs['Administration']['pdf'] = array(
+    'PDF',
+    'LBL_PDF_HEADER',
+    'LBL_CHANGE_PDF_SETTINGS',
+    './index.php?module=Administration&action=PDFSettings',
+    'system-settings'
 );
 
 $admin_group_header[]= array('LBL_ADMINISTRATION_HOME_TITLE','',false,$admin_option_defs, 'LBL_ADMINISTRATION_HOME_DESC');
@@ -226,14 +232,6 @@ $admin_option_defs['Administration']['aos'] = array(
     './index.php?module=Administration&action=AOSAdmin',
     'aos-settings'
 );
-
-$admin_option_defs['Administration']['aod'] = array(
-    'AOD',
-    'LBL_AOD_SETTINGS',
-    'LBL_CHANGE_SETTINGS_AOD',
-    './index.php?module=Administration&action=AODAdmin',
-    'aod-settings'
-);
 $admin_option_defs['Administration']['aop'] = array(
     'AOP',
     'LBL_AOP_SETTINGS',
@@ -266,14 +264,6 @@ $admin_option_defs['Administration']['search_wrapper'] = [
     'LBL_SEARCH_WRAPPER',
     'LBL_SEARCH_WRAPPER_DESC',
     './index.php?module=Administration&action=SearchSettings',
-    'global-search'
-];
-
-$admin_option_defs['Administration']['global_search'] = [
-    'icon_SearchForm',
-    'LBL_SEARCH_MODULES',
-    'LBL_SEARCH_MODULES_HELP',
-    './index.php?module=Administration&action=GlobalSearchSettings',
     'global-search'
 ];
 

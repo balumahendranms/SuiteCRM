@@ -83,10 +83,9 @@ class TTFontFile
     public $maxUniChar;
     public $kerninfo;
 
-    public function TTFontFile()
-    {
-        $this->maxStrLenRead = 200000;	// Maximum size of glyf table to read in as string (otherwise reads each glyph from file)
-    }
+	public function __construct() {
+		$this->maxStrLenRead = 200000;	// Maximum size of glyf table to read in as string (otherwise reads each glyph from file)
+	}
 
 
     public function getMetrics($file, $TTCfontID=0, $debug=false, $BMPonly=false, $kerninfo=false, $unAGlyphs=false)
@@ -1576,7 +1575,7 @@ class TTFontFile
             $os2 = $this->_set_ushort($os2, 80, 0x0000);	// ulCodePageRange = Bit #31 Symbol ****  80 = Bit 0-15
             $os2 = $this->_set_ushort($os2, 82, 0x0000);	// ulCodePageRange = Bit #32- Symbol **** 82 = Bits 48-63
             $os2 = $this->_set_ushort($os2, 84, 0x0000);	// ulCodePageRange = Bit #32- Symbol **** 84 = Bits 32-47
-    
+
             $os2 = $this->_set_ushort($os2, 64, 0x01);		// FirstCharIndex
             $os2 = $this->_set_ushort($os2, 66, count($subset));		// LastCharIndex
             // Set PANOSE first bit to 5 for Symbol
@@ -2232,15 +2231,15 @@ class TTFontFile
         hdmx
         kern
         LTSH
-        
+
         Tables which do NOT require glyphIndex
         VDMX
-        
+
         GDEF
         GPOS
         GSUB
         JSTF
-        
+
         DSIG
         PCLT - not recommended
         */
